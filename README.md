@@ -15,3 +15,5 @@ This package is meant to kickstart development of your site. It's probably unwis
 ## License
 
 MIT
+
+This is an edit.
