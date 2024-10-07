@@ -21,6 +21,9 @@ COPY ./wp-config.php /var/www/html
 # Set appropriate permissions
 RUN chown -R www-data:www-data /var/www/html/wp-content \
     && chmod -R 755 /var/www/html/wp-content
+    
+# Install and activate the GraphQL plugin
+RUN wp plugin install wp-graphql --activate --path=/var/www/html --allow-root
 
 # Expose port 80 for the web server
 EXPOSE 80
