@@ -1,77 +1,27 @@
-# WordPress core files
-wp-config.php
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/cache/
-wp-content/backups/
-wp-content/backup-db/
-wp-content/backup-ups/
-wp-content/backup-wp/
-wp-admin/
-wp-includes/
-./index.php
-wp-settings.php
-wp-load.php
-wp-cron.php
-wp-links-opml.php
-wp-activate.php
-wp-blog-header.php
-wp-comments-post.php
-wp-login.php
-wp-mail.php
-wp-signup.php
-wp-trackback.php
-xmlrpc.php
-.htaccess
-readme.html
-license.txt
-php.ini
-.env
-
-wp-content/themes/twenty*
-wp-content/plugins/akismet/
-wp-content/plugins/hello.php
-
-# Docker files
-docker-secrets.txt
-
-# Composer files
-/vendor/
+# Ignore composer generated files and directories
 composer.lock
+vendor
+public/wp
+public/content/plugins/*
+public/content/themes/*
+public/content/mu-plugins/*
 
-# Node.js files
-node_modules/
-npm-debug.log
-yarn-error.log
+# Ignore configuration files, etc.
+/.env
+/local/
+/memcached.php
 
-# macOS files
+# If you have a plugin, theme, or mu-plugin that you really do want to put into
+# version control, add an exception here. Exceptions will look like this:
+#   !public/content/plugins/plugin-folder
+!public/content/plugins/index.php
+!public/content/themes/index.php
+!public/content/mu-plugins/index.php
+!public/content/mu-plugins/register-theme-directory.php
+
+# Ignore the local config
+public/local-config.php
+
+# Ignore uploads
+public/content/uploads
 .DS_Store
-
-# VSCode files
-.vscode/
-
-# Windows files
-Thumbs.db
-ehthumbs.db
-
-# PHPStorm files
-.idea/
-
-# Timber files
-/*.twig
-
-# Miscellaneous
-*.log
-*.sublime-workspace
-*.sublime-project
-
-# Temporary files
-*.swp
-*.swo
-*.tmp
-*.temp
-
-# Ignore all WordPress content
-wp-content/themes/baunfire/node_modules/
-wp-content/themes/baunfire/vendor/
-wp-content/themes/baunfire/twig_cache/
