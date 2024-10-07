@@ -16,7 +16,7 @@ jobs:
         working-directory: wp-content/themes/${{ secrets.THEME_NAME }}/
         run: npm install
 
-      - name: Compile SCSS
+      - name: Compile SCSS (Alvin is updating)
         working-directory: wp-content/themes/${{ secrets.THEME_NAME }}/
         run: npm run prod
 
