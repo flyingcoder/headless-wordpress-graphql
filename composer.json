@@ -14,11 +14,12 @@
 	"require"     : {
 		"php": "^7.4 || ^8.0",
 		"illuminate/support": "^8.83",
-		"johnpbloch/wordpress-core": "@stable",
+		"johnpbloch/wordpress-core": "^6.6",
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"johnpbloch/wp-cli-phar": "^2.6",
 		"laravel/helpers": "^1.5",
-		"vlucas/phpdotenv": "^5.4"
+		"vlucas/phpdotenv": "^5.4",
+		"wp-graphql/wp-graphql-acf": "^0.6.2"
 	},
 	"autoload": {
 		"psr-4": {
@@ -36,7 +37,7 @@
 	"config": {
 		"sort-packages": true,
 		"allow-plugins": {
-			"johnpbloch/wordpress-core-installer": false
+			"johnpbloch/wordpress-core-installer": true
 		}
 	},
 	"scripts": {
